@@ -115,7 +115,7 @@ cameraResolution = (1800, 900)
 cameraFrameRate = 12
 device = get_device()
 
-time.sleep(0)
+time.sleep(30)
 
 with picamera.PiCamera() as camera:
     pool = [ImageProcessor() for i in range(4)]
