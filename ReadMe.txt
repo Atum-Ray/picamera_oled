@@ -10,3 +10,4 @@ ExecStart=/usr/bin/python3 -B /home/pi/picamera/video.py -d sh1106 -r 0 -i spi $
 
 [Install]
 WantedBy=graphical.target
+
