@@ -4,11 +4,11 @@
 # See LICENSE.rst for details.
 # PYTHON_ARGCOMPLETE_OK
 
-"""
+""""""
 Capture continuous video stream with picamera and display it on a screen.
 
 Requires picamera to be installed.
-"""
+""""""
 
 import io
 import sys
