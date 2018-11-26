@@ -1,4 +1,8 @@
+-> location of systemd: 
+
 /lib/system/system/picamera-oled.service
+
+-> systemd data:
 
 [Unit]
 Description=PiCamera OLED Photo Booth
