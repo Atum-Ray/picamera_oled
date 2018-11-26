@@ -13,6 +13,7 @@ Requires picamera to be installed.
 import io
 import sys
 import os
+import os.path
 import time
 import threading
 import RPi.GPIO as GPIO
@@ -112,9 +113,12 @@ def streams():
 
 cameraResolution = (1800, 900)
 cameraFrameRate = 12
-device = get_device()
 
-time.sleep(30)
+if not os.path.isfile("/tmp/debug"):
+    print("Sleeping. If this is not desirable, SSH into machine and run 'touch /tmp/debug'")
+    time.sleep(30)
+
+device = get_device()
 
 with picamera.PiCamera() as camera:
     pool = [ImageProcessor() for i in range(4)]
