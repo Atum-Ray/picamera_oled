@@ -70,7 +70,7 @@ class ImageProcessor(threading.Thread):
                         if GPIO.input(Button) == 0:
                             print("Button pressed!")
                             freeze = True
-                            os.system('sudo aplay /home/pi/picamera/remote/assets/camera-shutter-click-03.wav')
+                            os.system('sudo aplay /home/pi/picamera/assets/camera-shutter-click-03.wav')
                             #The following 2 lines below allow you to save the thumbnail on the OLED screen
                             #oled_thumbnail_location='/home/pi/Desktop/photobooth/bett-img-' + time.strftime("%Y%m%d-%H%M%S") + '_thumbnail.jpg'
                             #photo.save(oled_thumbnail_location)
