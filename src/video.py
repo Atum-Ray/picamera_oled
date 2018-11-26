@@ -15,7 +15,6 @@ import sys
 import os
 import time
 import threading
-from picamera import PiCamera
 import RPi.GPIO as GPIO
 
 from PIL import Image
